@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+</head>
+<h1>Relatório de Vendas do PETSHOP LT-Rações</h1>
+    <style>
+        h1{text-align: center;}
+    </style>
+<body>
+<hr>
+<h3>selecione o mês para análise</h3>
+<button>jan</button> <button>fev</button> <button>mar</button><button>abr</button><button>mai</button>
+<h2>Relatório da Semana 04/07/2022 a 09/07/2022
+    <p>(1a-semana do mês de Julho)</p></h2>
+<hr>
+    <style>
+        h1{text-align: center;}
+    </style>
+<p><h2>1o gráfico: Faturamento por Dia</h2></p>
+
+<img src="{{ url_for('visualize1') }}">
+<hr>
+<hr>
+<p><h2>2o gráfico: Percentual de Faturamento por Segmento</h2></p>
+<img src="{{ url_for('visualize2') }}">
+<hr>
+<p>continua</p>
+</body>
+</html>
