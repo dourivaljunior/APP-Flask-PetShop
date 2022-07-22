@@ -107,8 +107,8 @@ def visualize2():
     fig2.savefig(img)
     img.seek(0)
     return send_file(img, mimetype='img/png')
-@app.route("/contatos")
-def contatos():
-    return render_template("e-mail:prof.dourival.junior@gmail.com")
+@app.route("/julho01")
+def julho01():
+    return render_template("julho01.html")
 if __name__ == '__main__':
    app.run(debug = True)
